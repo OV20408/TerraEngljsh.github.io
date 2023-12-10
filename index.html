@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Home Page - TerraSense</title>
+    <script>
+        window.addEventListener('load', lol)
+        document.addEventListener("click",lol)
+        function lol() {
+            // Get the button and the section to scroll to
+            var scrollButton = document.getElementById("scroll");
+            var scrolledSection = document.getElementById("scrolled");
+
+            // Add a listener to the button
+            scrollButton.addEventListener("click", function() {
+                // Smoothly scroll to the desired section
+                scrolledSection.scrollIntoView({ behavior: "smooth" });
+            });
+        };
+    </script>
+</head>
+<body class="index">
+    <header>
+        <div>
+            <a href="">
+                <img class="logo" src="remove.png" alt="Logo Image" title="TerraSense" >
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="guide.html">Guide</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="info.html">Information</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="m">
+        <h1>Welcome to TerraSense</h1>
+        <section>
+            <button  id="scroll">Press</button>
+        </section>
+        <section id="scrolled" class="sec2">
+            <h2>
+                What is TerraSense?
+            </h2>
+            <article  class="content">
+                <p class="text1">
+                    TerraSense is a desktop application that provides a web page allowing you to check and obtain relevant information about the weather at a location. You can view the climatic data for your specific location, as well as get a list of recommended crops to plant.
+                </p>
+            </article>
+        </section>
+        <section class="div">
+            <article>
+                <h2>
+                    Climatic Variability and Crop Selection
+                </h2>
+                <p>
+                    Farmers face constant challenges due to climatic variability, including unpredictable changes in weather conditions and rainfall patterns. This variability can significantly impact crop yield and the profitability of agricultural operations. Farmers often struggle to make informed decisions about which crops to plant in their fields, especially when the weather is uncertain and climatic patterns are constantly changing. Planting the wrong crop in a season can lead to significant economic losses and negatively affect food security.
+                </p>
+            </article>
+            <aside>
+                <h2>
+                    What would be the impact on Bolivian agriculture of implementing a crop selection system in response to climatic variability?
+                </h2>
+                <p> 
+                    Adopting a crop selection system in Bolivia can strengthen the resilience of the agricultural sector to long-term impacts, considering changing climatic patterns and the choice of adapted crops. Locally, a preference for more resistant crops would improve productivity and stability, reducing farmers' vulnerability to extreme weather events. At the regional level, this strategy would influence agricultural diversification and the geographical distribution of crops, optimizing production and mitigating risks associated with climatic variability.
+                </p>
+            </aside>
+        </section>
+        <footer class= "footer">
+            <div>
+                &lt; &copf; Copyright - TerraSense 2023 &gt;
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
